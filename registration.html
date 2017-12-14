@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intitial scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="css/registration.css">
+
+</head>
+
+<body>
+  <header>THE CODE REVIEW</header>
+  <div class="main-intro">
+  <h1>Signup for our newsletter</h1>
+  <span id="intro">Get the latest news on how your code is doing right in your inbox</span>
+  </div>  <!--End of main-intro --><br>
+  <div class="container">
+  <form>
+    <fieldset>
+      <!-- <div> -->
+    <legend><span class="legendInfo">Contact Information</span></legend>
+    <!-- </div> div fixes border problem with legend overlapping border -->
+      <div class="form-row">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="user_name" placeholder="Required">
+      </div>
+
+     <div class="form-row">
+      <label for="mail">Email Address</label>
+      <input type="email" id="mail" name="user_email" placeholder="Required">
+    </div>
+    <div class="form-row">
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="user_phonenumber">
+    </div>
+
+    <div class="form-row">
+    <label for="address">Street Address</label>
+    <input type="text" id="address" name="user_address">
+    </div>
+
+    <div class="form-row">
+    <label for="city">City</label>
+    <input type="text" id="city" name="user_city">
+    </div>
+
+    <div class="form-row">
+    <label for="state">State</label>
+    <select id="state" name="user_state">
+     <optgroup label="choose state"></optgroup>
+     <option value="" disabled selected>Choose State</option>
+      <option value="Alabama">Alabama</option>
+      <option value="Alaska">Alaska</option>
+      <option value="Arizona">Arizona</option>
+      <option value="Arkansas">Arkansas</option>
+      <option value="Illinois">Illinois</option>
+      <option value="Florida">Florida</option>
+      <option value="Georgia">Georgia</option>
+      <option value="North Carolina">North Carolina</option>
+      <option value="Virginia">Virginia</option>
+      <option value="New Hampshire">New Hampshire</option>
+      <option value="Maine">Maine</option>
+    </select>
+    </div>
+
+    <div class="form-row">
+    <label for="zip">Zip Code</label>
+    <input type="text" id="zip" name="user_zipcode">
+    </div>
+    </fieldset>
+ 
+    <fieldset> 
+      <div>
+    <legend class="spaceBottom">Newsletter</legend>
+      </div>   <!--div fixes border problem with legend -->
+
+    <div class="newsletter-label">
+    <label>Select the newsletters you would like to recieve</label><br>
+    </div>
+    <div class="checkbox-space">
+    <input type="checkbox" id="html_news" value="html_news" name="user_news"><label for="html_news">HTML News</label><br>
+   </div>
+   <div class="checkbox-space">
+    <input type="checkbox" id="css_news" value="css_news" name="user_news"><label for="css_news">CSS News</label><br>
+   </div>
+   <div class="checkbox-space spaceBottom">
+    <input type="checkbox" id="js_news" value="js_news" name="user_news"><label for="js_news">JavaScript News</label><br>
+    </div>
+
+    <label>Newsletter format</label><br>
+    <div class="checkbox-space">
+    <input type="radio" id="html" value="html" name="format"><label for="html">HTML</label><br>
+   </div>
+   <div class="checkbox-space spaceBottom">
+    <input type="radio" id="plain" value="text" name="format"><label for="plain">Plain text</label><br>
+    </div>
+    <label for="topics">Other topics you'd like to hear about</label>
+    <textarea id="topics" name="user_topics"></textarea>
+    </fieldset>
+    <button type="submit">Sign Up</button>
+
+
+  </form>
+  </div> <!--End of Container -->
+  <footer><i>Copyright The Code Review</i></footer>
+</body>
+</html>
